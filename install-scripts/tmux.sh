@@ -42,6 +42,8 @@ if [[ -d "$HOME/.tmux/" ]]; then
 else
   printf "${NOTE}Setting up${SKY_BLUE} Tmux${RESET} Config...\n"
   mv assets/.tmux.conf "$HOME/"
+  printf "${NOTE}Downloading ${SKY_BLUE}Tmux Plugin manager${RESET}...\n"
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
 printf "\n%.0s" {1..2}
