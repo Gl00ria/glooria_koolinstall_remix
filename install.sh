@@ -148,7 +148,7 @@ git_tools="OFF"
 txt_editors="OFF"
 doc_reader="OFF"
 print_tools="OFF"
-email_client="OFF"
+email="OFF"
 browser="OFF"
 media="OFF"
 hypervisor="OFF"
@@ -294,7 +294,7 @@ options_command+=(
   "comp_tools" "Configure Compress tools eg..(unranr/unzip)?" "OFF"
   "git_tools" "Configure Git tools eg..(lazygit)?" "OFF"
   "print_tools" "Configure Printer/Scanner tools eg..(cups)?" "OFF"
-  "email_client" "Download Email Client eg..(bluemail)?" "OFF"
+  "email" "Download Email Client eg..(bluemail)?" "OFF"
   "browser" "Download Browsers eg..(firefox/brave)?" "OFF"
   "media" "Download Media tools eg..(rhythmbox/playerctl)?" "OFF"
   "hypervisor" "Download Hypervisor App eg..(VMware/Vbox)?" "OFF"
@@ -527,11 +527,11 @@ for option in "${options[@]}"; do
     ;;
   print_tools)
     echo "${INFO} Downloading & Installing ${SKY_BLUE}Printer/Scanner Tools...${RESET}" | tee -a "$LOG"
-    execute_script "print_tools.sh"
+    execute_script "printer.sh"
     ;;
-  email_client)
+  email)
     echo "${INFO} Downloading & Installing ${SKY_BLUE}Email Client...${RESET}" | tee -a "$LOG"
-    execute_script "email_client.sh"
+    execute_script "email.sh"
     ;;
   browser)
     echo "${INFO} Downloading & Installing ${SKY_BLUE}Browser/s...${RESET}" | tee -a "$LOG"
