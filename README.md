@@ -1,3 +1,4 @@
+SDDM them: (https://github.com/Keyitdev/sddm-astronaut-theme)
 <div align="center">
 
 # 💌 **Gl00ris's-Remix for Kool Arch - Hyprland Install Script** 💌

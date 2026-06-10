@@ -27,7 +27,7 @@ if [ -d glooria_dotkool_remix ]; then
   chmod +x copy.sh
   ./copy.sh
 else
-  if git clone --depth=1 https://github.com/Gl00ria/glooria_dotkool_remix; then
+  if git clone --depth=1 https://github.com/Gl00ria/Hyprland-Dots; then
     cd glooria_dotkool_remix || exit 1
     chmod +x copy.sh
     ./copy.sh
